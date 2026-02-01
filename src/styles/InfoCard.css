@@ -1,0 +1,17 @@
+/*seccion para el contenedor de las tarjetas*/
+.card-border{
+    border: 10px solid #e10600;
+    border-radius: 15px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*seccion para el titulo de las tarjetas*/
+.titleCard{
+    font-family: 'F1Font';
+}
+
+/*seccion para la descripcion de las tarjetas*/
+.descriptionCard{
+    font-family: 'Titillium Web SemiBold';
+}

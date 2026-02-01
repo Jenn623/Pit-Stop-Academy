@@ -52,8 +52,9 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+/*seccion del hover del boton*/
 button:hover {
-  border-color: #646cff;
+  border-color: #E01600;
 }
 button:focus,
 button:focus-visible {
@@ -64,6 +65,16 @@ button:focus-visible {
 @font-face {
   font-family: 'F1Font';
   src: url('./assets/fonts/Formula1-Bold_web_0.ttf') format('truetype'); /*truetype es el formato de .ttf*/
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('./assets/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web SemiBold';
+  src: url('./assets/fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
 }
 
 @media (prefers-color-scheme: light) {

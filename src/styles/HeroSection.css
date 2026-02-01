@@ -1,0 +1,13 @@
+/*seccion para el titulo del landpage*/
+.heroTitle{
+    font-family: 'F1Font';
+    color: #E10600;
+}
+
+/*seccion para la descripcion del landpage*/
+.heroDescription{
+    font-family: 'Titillium Web SemiBold';
+    color: #ffffff;
+}
+
+/*seccion para el boton empezar del landpage*/
