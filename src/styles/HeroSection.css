@@ -8,6 +8,11 @@
 .heroDescription{
     font-family: 'Titillium Web SemiBold';
     color: #ffffff;
+    font-size: 1.2rem;
 }
 
 /*seccion para el boton empezar del landpage*/
+.heroBtn{
+    width: 8em;
+    height: auto;
+}

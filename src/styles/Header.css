@@ -9,3 +9,8 @@
     border-bottom: 3px solid whitesmoke;
     transition: all 0.3s linear;
 }
+
+.f1-navbar{
+    width: 70%;
+    margin: 0 auto;
+}

@@ -6,10 +6,10 @@ function Header (){
 
         <>
             {/*propiedad navbar para conseder los atributos navbar de bootstrap, es el contenedor principal*/}
-            <nav className='navbar justify-content-center'>
+            <nav className='navbar justify-content-center sticky-top f1-navbar pt-4'>
                 {/*debe contener dentro una propiedad container-fluid para que no pegue con los bordes*/}
-                <div className='container-fluid'>
-                    <div className='f1-logo '>
+                <div className='container-fluid justify-content-evenly'> {/* en este caso, el space evenly distribuye todos los elementos de manera equitativa */}
+                    <div className='navbar-brand f1-logo '>
                         <img src="../src/assets/images/f1-logo.svg" alt="Logo F1" />
                     </div>
                     {/*navbar-nav es el contenedorn de los enlaces*/}

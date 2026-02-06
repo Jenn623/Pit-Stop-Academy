@@ -3,17 +3,22 @@ import {Container, Row, Col} from 'react-bootstrap'
 import Header from '../Components/Header'
 import HeroSection from '../Components/HeroSection';
 import InfoCard from '../Components/InfoCard';
+import FooterComp from '../Components/FooterComp';
 
 function Home(){
 
     return(
 
         <>
-            <Header></Header>
-            <HeroSection></HeroSection>
-            {/*seccion de las tarjetas dinámicas*/}
-            <Container>
-                <Row className='justify-content-center'>
+
+            {/* SECCIÓN "HERO" DE LA PÁGINA */}
+            <div className='pt-5 mb-5 mt-5'>
+                <HeroSection></HeroSection>
+            </div>
+
+            {/* SECCIÓN DE LAS TARJETAS DINÁMICAS */}
+            <Container className='justify-content-center pb-4'>
+                <Row className='justify-content-center pb-5'>
                     <Col className='col-md-4'>
                         <InfoCard title="¿Qué Onda con la F1?"
                         description="¿Es solo dar vueltas en círculos? ¡Para nada! Deja te explico las reglas básicas,
