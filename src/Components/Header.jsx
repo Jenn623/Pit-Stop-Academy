@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import '../styles/Header.css'
 
 function Header (){
@@ -17,10 +18,10 @@ function Header (){
                         <ul className='nav'>
                             <li className='nav-item mr-2'>
                                 {/*nav-link vuielve un enlace y le da la propiedad de bootstrap*/}
-                                <a href="" className='nav-link customFont'>Inicio</a>
+                                <a href="/" className='nav-link customFont'>Inicio</a>
                             </li>
                             <li className='nav-item mr-2'>
-                                <a href="" className='nav-link customFont'>¿Qué es?</a>
+                                <a href="/WhatIsF1" className='nav-link customFont'>¿Qué es?</a>
                             </li>
                             <li className='nav-item mr-2'>
                                 <a href="" className='nav-link customFont'>Escuderías y Pilotos</a>

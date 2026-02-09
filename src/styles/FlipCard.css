@@ -1,0 +1,63 @@
+/*seccion para el titulo de las tarjetas*/
+.titleCard{
+    font-family: 'F1Font';
+}
+
+/*seccion para la descripcion de las tarjetas*/
+.descriptionCard{
+    font-family: 'Titillium Web SemiBold';
+}
+
+/*SECCIÓN DEL EFECTO DE LAS FLIPCARD*/
+
+/*sección del escenario, el espacio que ocupan las tarjetas*/
+.cardScene{
+    perspective: 1000px; /*esto le da el efecto 3D al girar, hace que no se vea plana*/
+    height: auto;
+    border: 10px solid #F2C146;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /*aplicamos una transición que actúe como "amortiguador" para el efecto de "flotar" en los componentes cards*/
+    /*propiedad | tiempo | tiempo de la animacion | delay de la función*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.cardScene:hover{
+    /* mueve el componente 10px hacia Arriba */
+    transform: translateY(-10px);
+    /* efecto de sombra al hacer hover sobre las Cards */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/*sección del contenedor que SI gira, es decir la moneda, aqui van pegadas ambos contenedores de la información*/
+.cardInner{
+    /*position: relative; /*hace que el cintenedor se encuentre justo encima del contenedor principal*/
+    display: grid;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; /*esto es la duración del giro*/
+    transform-style: preserve-3d; /*define como renderizar la animación, esto aclara que debe ser en 3D*/
+}
+
+/*sección de la clase que hace girar los contenedores*/
+.cardIsFlipped{
+    transform: rotateY(180deg); /*efecto de girar en la tarjeta*/
+}
+
+/*sección de la cara frontal de la tarjeta*/
+.cardFront, 
+.cardBack{
+    /*position: absolute; /*para que el contenido se "oculte justo destras del otro contenedor" */
+    grid-area: 1/1;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /*hace que al girar una cara 180 grados esta se vuelva invisible*/
+
+    -webkit-backface-visibility: hidden; /* Para compatibilidad con Safari/Chrome */
+}
+
+.cardBack{
+    transform: rotateY(180deg); /*esto hace que el contenido específico este oculto al principio*/
+}

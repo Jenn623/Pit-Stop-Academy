@@ -1,0 +1,9 @@
+/* seccion para el titulo del componente */
+.whatIsTitle{
+    font-family: 'F1Font';
+}
+
+/* seccion para la descripcion del compoenente */
+.whatIsDescription{
+    font-family: 'Titillium Web SemiBold';
+}

@@ -1,9 +1,7 @@
 import '../styles/Home.css'
 import {Container, Row, Col} from 'react-bootstrap'
-import Header from '../Components/Header'
 import HeroSection from '../Components/HeroSection';
 import InfoCard from '../Components/InfoCard';
-import FooterComp from '../Components/FooterComp';
 
 function Home(){
 
@@ -13,7 +11,8 @@ function Home(){
 
             {/* SECCIÓN "HERO" DE LA PÁGINA */}
             <div className='pt-5 mb-5 mt-5'>
-                <HeroSection></HeroSection>
+                <HeroSection>
+                </HeroSection>
             </div>
 
             {/* SECCIÓN DE LAS TARJETAS DINÁMICAS */}
