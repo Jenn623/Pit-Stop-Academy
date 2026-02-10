@@ -11,8 +11,8 @@ function FooterComp(){
                 <Container className='pt-2'>
                     <Row>
                         <Col className='background-footer'>
-                            <h6 className="footerInfo">@2026 Star Fragment Studio | Built piece by piece</h6>
-                            <p>Pit Stop Academy</p>
+                            <h6 className="footerInfo">Powered by Dev Engine | High-Performance Development</h6>
+                            <p>@2026 Pit Stop Academy</p>
                         </Col>
                     </Row>
                 </Container>

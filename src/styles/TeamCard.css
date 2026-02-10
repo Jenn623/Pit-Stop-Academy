@@ -1,0 +1,11 @@
+/*sección para la tipografia del nombre del equipo*/
+.teamName{
+    font-family: 'F1Font';
+}
+
+/*seccion para el tamaño del contenedor del icono de cada */
+.icon-container{
+    max-width: 800px;
+    object-fit: contain;
+    width: 100%;
+}

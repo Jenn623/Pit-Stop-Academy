@@ -24,7 +24,7 @@ function Header (){
                                 <a href="/WhatIsF1" className='nav-link customFont'>¿Qué es?</a>
                             </li>
                             <li className='nav-item mr-2'>
-                                <a href="" className='nav-link customFont'>Escuderías y Pilotos</a>
+                                <a href="/Teams&Racers" className='nav-link customFont'>Escuderías y Pilotos</a>
                             </li>
                             <li className='nav-item mr-2'>
                                 <a href="" className='nav-link customFont'>Circuitos</a>
