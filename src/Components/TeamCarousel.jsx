@@ -1,9 +1,10 @@
 import TeamCard from "./TeamCard"
 import teamsData from '../data/teams&racersData.js'
+import TeamModal from "./TeamModal.jsx"
 import { Carousel } from "react-bootstrap"
 import '../styles/TeamCarousel.css'
 
-function TeamCarousel(){
+function TeamCarousel({onTeamClick}){
 
     return (
 
@@ -15,12 +16,13 @@ function TeamCarousel(){
             {/* especificamos el primer item del carrusel, también le decimos que es el primer elemento activo */}
             {teamsData.map((item, index) => (
                 <Carousel.Item key={index} className="interval-null">
-                    <div className="justify-content-center d-flex">
+                    <div className="justify-content-center d-flex" onClick={() => onTeamClick(item)}>
                         <TeamCard imgTeam={item.teamLogo} nameTeam={item.teamName} className="d-block w-100"></TeamCard>
                     </div>
                 </Carousel.Item>
             ))}
         </Carousel>
+        {/*<TeamModal show={true}  teamsData={teamsData}></TeamModal>*/}
         </>
     )
 }

@@ -1,7 +1,29 @@
 import MainSection from "../Components/MainSection"
 import TeamCarousel from "../Components/TeamCarousel"
+import TeamModal from "../Components/TeamModal"
+import { useState } from "react"
 
 function TeamsRacers(){
+
+    //estados para el manejo de los modales de la página
+
+    // estado que hace que se muestre o no el modal
+    const[showWodal, setShowModal] = useState(false);
+
+    //estado que "carga" la información del modal seleccionado
+    const[selectedTeam, setSelectedTeam] = useState(null);
+
+    //función que carga la informacion del equipo seleccionado en el modal
+    const handleTeamClick = (team) =>{
+        setSelectedTeam(team); // carga la información del equipo directamente del array de equipos
+        setShowModal(true); // muestra el modal
+    };
+
+    //función que permite cerrar el modal
+    const handleCloseModal = () =>{
+        setShowModal(false);
+        setSelectedTeam(null);
+    };
 
     return (
 
@@ -13,7 +35,8 @@ function TeamsRacers(){
             </MainSection>
         </div>
         <div className="pt-5">
-            <TeamCarousel></TeamCarousel>
+            <TeamCarousel onTeamClick={handleTeamClick}></TeamCarousel>
+            <TeamModal show={showWodal} handleClose={handleCloseModal} teamsData={selectedTeam}></TeamModal>
         </div>
         </>
     )
