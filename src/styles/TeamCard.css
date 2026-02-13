@@ -5,7 +5,7 @@
 
 /*seccion para el tamaño del contenedor del icono de cada */
 .icon-container{
-    max-width: 800px;
+    max-width: 750px;
     object-fit: contain;
     width: 100%;
 }
