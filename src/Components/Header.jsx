@@ -27,7 +27,7 @@ function Header (){
                                 <a href="/Teams&Racers" className='nav-link customFont'>Escuderías y Pilotos</a>
                             </li>
                             <li className='nav-item mr-2'>
-                                <a href="" className='nav-link customFont'>Circuitos</a>
+                                <a href="/WorldWideCircuits" className='nav-link customFont'>Circuitos</a>
                             </li>
                             <li className='nav-item mr-2'>
                                 <a href="" className='nav-link customFont'>Glosario</a>

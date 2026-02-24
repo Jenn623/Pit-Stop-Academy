@@ -37,3 +37,11 @@
        por si la imagen original es muy larga hacia abajo */
     object-position: top;
 }
+
+/*sección para una variable global para poner en los modales*/
+.myDarkModal :global(.modal-content){
+    background-color: var(--team-theme); 
+    color: white; /* Letra blanca para contrastar */
+    border: none; /* Quitamos bordes para que se vea limpio */
+    overflow: hidden; /* Mantiene las esquinas redondeadas a raya */
+}

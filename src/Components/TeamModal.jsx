@@ -9,7 +9,7 @@ function TeamModal({show, handleClose, teamsData}){
 
         <>
             {/* se crea el modal centrado, donde se hara el manejo de as tabs (pestañas) */}
-            <Modal className='dialog-centered text-center'
+            <Modal className='dialog-centered text-center myDarkModal'
             show={show}
             onHide={handleClose}
             style={{ '--team-color': teamsData.color }}
@@ -34,7 +34,7 @@ function TeamModal({show, handleClose, teamsData}){
                     <Tab title="Piloto 1" eventKey="piloto1" className='driverInfo '>
                         <div className='row teamGradient justify-content-center'>
                             <div className='teamInfo col-12 col-md-5 text-center mb-4 mb-md-0'>
-                                <h5 className='teamInfo mb-3'> {teamsData.drivers[0].racerName} </h5>
+                                <h5 className='teamInfo mb-3'> {teamsData.drivers[0].racerName} </h5>mn
                                 {/* aqui va la imagen de cada piloto */}
                                 <div className='driverContainer'>
                                     <img src={teamsData.drivers[0].driverPic} alt="" className='driverImage'/>

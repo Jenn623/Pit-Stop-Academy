@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
 import WhatIsF1 from './Pages/WhatIsF1.jsx'
 import TeamsRacers from './Pages/Teams&Racers.jsx'
+import WorldWideCircuits from './Pages/WorldWideCircuits.jsx'
 import Layout from './Components/Layout.jsx'
 import './App.css'
 
@@ -24,7 +25,8 @@ function App() {
             <Route path='/WhatIsF1' element={<WhatIsF1/>} ></Route>
             {/* cuando la ruta sea "/Teams&Racers" se renderiza la página Teams&Racers*/}
             <Route path='/Teams&Racers' element={<TeamsRacers/>}></Route>
-
+            {/* cuando la ruta sea "/WorldWideCircuits" se renderiza la página WorldWideCircuits */}
+            <Route path='/WorldWideCircuits' element={<WorldWideCircuits/>}></Route>
           </Routes>
         </Layout>
 
