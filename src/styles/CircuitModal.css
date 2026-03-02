@@ -1,0 +1,71 @@
+/* sección de la tipografía */
+.textInfo{
+    font-family: 'F1Font';
+    color: white;
+}
+
+.textStats{
+    font-family: 'Titillium Web SemiBold';
+}
+
+/* fondo blanco desde la raíz del modal */
+.ticketModal :global(.modal-content) {
+    background-color: transparent;
+    border: none;
+}
+
+/* sección de los estilos del cuerpo del ticket */
+.ticketBody {
+    background-color: #11151c; /* Fondo muy oscuro */
+    color: white;
+    border-radius: 15px;
+    padding: 0; /* Quitamos padding para que nuestras columnas toquen los bordes */
+    border: 2px solid #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+/* sección del lado izquierdo, es decir, del ticket que se corta */
+.ticketLeft {
+    background-color: #1a1e24; /* Un tono ligerísimamente distinto */
+    padding: 2rem;
+    /* La línea punteada mágica que hace la ilusión del ticket */
+    border-right: 3px dashed #333; 
+}
+
+/* sección del lado derecho, es decir, de la información principal */
+.ticketRight {
+    padding: 2rem 3rem;
+}
+
+/* sección del contenedor del circuito */
+.circuitPicContainer {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    /* Aseguramos que la silueta no se deforme */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circuitLayout {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Si tus imágenes son negras, este truco las vuelve blancas: */
+    filter: invert(1);
+}
+
+/* SECCIÓN DEL MÓVIL */
+
+/* Si en móvil se apilan, cambiamos la línea punteada para que sea horizontal */
+@media (max-width: 767px) {
+    .ticketLeft {
+        border-right: none;
+        border-bottom: 3px dashed #333;
+    }
+    .ticketRight {
+        padding: 1.5rem;
+    }
+}

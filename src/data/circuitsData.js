@@ -9,7 +9,7 @@ export const circuitsData = [
         circuitLength:"5.278 km",
         laps:14,
         lapRecord:"1:19.813 - Charles Lecrerc (2024)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/AlbertPark-Australia.svg",
         raceDate: "06-08 de marzo"
     },
     {
@@ -20,7 +20,7 @@ export const circuitsData = [
         circuitLength:"5.451 km",
         laps:16,
         lapRecord:"1:32.238 - Michael Schumacher (2004)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/ShangaiCircuit-China.svg",
         raceDate: "13-15 de marzo"
     },
     {
@@ -31,7 +31,7 @@ export const circuitsData = [
         circuitLength:"5.807 km",
         laps:18,
         lapRecord:"1:30.983 - Lewis Hamilton (2019)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Suzuka-Japon.svg",
         raceDate: "27-29 de marzo"
     },
     {
@@ -42,7 +42,7 @@ export const circuitsData = [
         circuitLength:"5.412 km",
         laps:15,
         lapRecord:"1:31.447 - Pedro de la Rosa (2005)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Bahrain/BahrainCircuit-Bahrain.svg",
         raceDate: "10-12 de abril"
     },
     {
@@ -53,7 +53,7 @@ export const circuitsData = [
         circuitLength:"6.174 km",
         laps:27,
         lapRecord:"1:30.734 - Lewis Hamilton (2021)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/JeddahCircuit-Arabia-Saudita.svg",
         raceDate: "17-19 de abril"
     },
     {
@@ -64,7 +64,7 @@ export const circuitsData = [
         circuitLength:"5.412 km",
         laps:19,
         lapRecord:"1:29.708 - Max Verstappen (2023)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/MiamiAutodrome-Miami.svg",
         raceDate: "01-03 de mayo"
     },
     {
@@ -75,7 +75,7 @@ export const circuitsData = [
         circuitLength:"4.361 km",
         laps:14,
         lapRecord:"1:13:078 - Valtteri Bottas (2019)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Gilles-Canada.svg",
         raceDate: "22-24 de mayo"
     },
     {
@@ -86,7 +86,7 @@ export const circuitsData = [
         circuitLength:"3.337 km",
         laps:19,
         lapRecord:"1:12.209 - Lewis Hamilton (2021)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Monaco-Monaco.svg",
         raceDate: "05-07 de junio"
     },
     {
@@ -97,7 +97,7 @@ export const circuitsData = [
         circuitLength:"4.657 km",
         laps:14,
         lapRecord:"1:16.330 - Max Verstappen (2023)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Barcelona-España.svg",
         raceDate: "12-14 de junio"
     },
     {
@@ -108,7 +108,7 @@ export const circuitsData = [
         circuitLength:"4.318 km",
         laps:10,
         lapRecord:"1:05.619 - Carlos Sainz (2020)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/RedBullRing-Austria.svg",
         raceDate: "26-28 de junio"
     },
     {
@@ -119,7 +119,7 @@ export const circuitsData = [
         circuitLength:"5.891 km",
         laps:18,
         lapRecord:"1:27.097 - Max Verstappen (2020)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Silverstone-ReinoUnido.svg",
         raceDate: "03-05 de junio"
     },
     {
@@ -130,7 +130,7 @@ export const circuitsData = [
         circuitLength:"7.004 km",
         laps:19,
         lapRecord:"1:46.286 - Valtteri Bottas (2018)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/SpaFrancorchamps-Belgica.svg",
         raceDate: "17-19 de julio"
     },
     {
@@ -141,7 +141,7 @@ export const circuitsData = [
         circuitLength:"4.381 km",
         laps:14,
         lapRecord:"1:16.627 - Lewis Hamilton (2020)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Hungaroring-Hungria.svg",
         raceDate: "24-26 de julio"
     },
     {
@@ -152,7 +152,7 @@ export const circuitsData = [
         circuitLength:"4.259 km",
         laps:14,
         lapRecord:"1:11.097 - Lewis Hamilton (2021)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Zandvoort-PaisesBajos.svg",
         raceDate: "21-23 de agosto"
     },
     {
@@ -163,7 +163,7 @@ export const circuitsData = [
         circuitLength:"5.47 km",
         laps:20,
         lapRecord:"1:18.887 - Lewis Hamilton (2020)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Monza-Italia.svg",
         raceDate: "04-06 de septiembre"
     },
     {
@@ -174,7 +174,7 @@ export const circuitsData = [
         circuitLength:"5.47 km",
         laps:20,
         lapRecord:"Nuevo Circuito para 2026",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Madrid-España.svg",
         raceDate: "11-13 de septiembre"
     },
     {
@@ -185,7 +185,7 @@ export const circuitsData = [
         circuitLength:"6.003 km",
         laps:20,
         lapRecord:"1:43.009 - Charles Lecrerc (2019)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Baku-Azerbaijan.svg",
         raceDate: "25-27 de septiembre"
     },
     {
@@ -196,7 +196,7 @@ export const circuitsData = [
         circuitLength:"4.940 km",
         laps:19,
         lapRecord:"1:35.867 - Lewis Hamilton (2023)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/MarinaBay-Singapur.svg",
         raceDate: "09-11 de octubre"
     },
     {
@@ -207,7 +207,7 @@ export const circuitsData = [
         circuitLength:"5.513 km",
         laps:20,
         lapRecord:"1:36.169 - Charles Leclerc (2019)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Cota-USA.svg",
         raceDate: "23-25 de octubre"
     },
     {
@@ -218,7 +218,7 @@ export const circuitsData = [
         circuitLength:"4.304 km",
         laps:17,
         lapRecord:"1:17.774 - Valtteri Bottas (2021)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/HermanosRodriguez-Mexico.svg",
         raceDate: "30-01 de noviembre"
     },
     {
@@ -229,7 +229,7 @@ export const circuitsData = [
         circuitLength:"4.309 km",
         laps:15,
         lapRecord:"1:10.540 - Valtteri Bottas (2018)",
-        circuitPic:,
+        circuitPic:"",
         raceDate: "06-08 de noviembre"
     },
     {
@@ -240,7 +240,7 @@ export const circuitsData = [
         circuitLength:"6.201 km",
         laps:17,
         lapRecord:"1:35.490 - Oscar Piastri (2023)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/VegasStrip-Vegas.svg",
         raceDate: "19-21 de noviembre"
     },
     {
@@ -251,7 +251,7 @@ export const circuitsData = [
         circuitLength:"5.419 km",
         laps:16,
         lapRecord:"1:24.319 - Max Verstappen (2023)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/Lusail-Qatar.svg",
         raceDate: "27-29 de noviembre"
     },
     {
@@ -262,7 +262,7 @@ export const circuitsData = [
         circuitLength:"5.281 km",
         laps:16,
         lapRecord:"1:26.103 - Max Verstappen (2021)",
-        circuitPic:,
+        circuitPic:"/images/WorldWideCircuits/YasMarina-AbuDabi.svg",
         raceDate: "04-06 de diciembre"
     },
 ]

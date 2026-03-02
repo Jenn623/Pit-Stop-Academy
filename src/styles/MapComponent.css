@@ -1,0 +1,19 @@
+/* seccion para el div que contiene el mapa */
+.mapWrapper{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+/* seccion para el contenedor del mapa */
+.leafletMap{
+    /*en leaflet se debe de definir un altura, de lo contrario el mapa no se visualiza*/
+    height: 60vh;
+    width: 100%;
+
+    border-radius: 15px;
+    border: 4px solid #E10600;
+
+    /*ponemos un z-index de 1 para que no se sobreponga al resto de los componentes*/
+    z-index: 1;
+
+}
