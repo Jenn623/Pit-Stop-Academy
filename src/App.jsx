@@ -4,6 +4,7 @@ import Home from './Pages/Home.jsx'
 import WhatIsF1 from './Pages/WhatIsF1.jsx'
 import TeamsRacers from './Pages/Teams&Racers.jsx'
 import WorldWideCircuits from './Pages/WorldWideCircuits.jsx'
+import Glossary from './Pages/Glossary.jsx'
 import Layout from './Components/Layout.jsx'
 import './App.css'
 
@@ -27,6 +28,8 @@ function App() {
             <Route path='/Teams&Racers' element={<TeamsRacers/>}></Route>
             {/* cuando la ruta sea "/WorldWideCircuits" se renderiza la página WorldWideCircuits */}
             <Route path='/WorldWideCircuits' element={<WorldWideCircuits/>}></Route>
+            {/* cuando la ruta sea "/Glossary" se renderiza la página Glossary */}
+            <Route path='/Glossary' element={<Glossary/>}></Route>
           </Routes>
         </Layout>
 

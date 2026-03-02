@@ -1,0 +1,51 @@
+/* sección para los estilos del buscador */
+.searchInput {
+    width: 100%;
+    padding: 10px 20px 10px 40px;
+    border-radius: 30px;
+    border: 3px solid #E10600;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #333;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+/* sección de los estilos de los filtros */
+.filterBtn {
+    background-color: #333;
+    color: #E10600;
+    border: 2px solid #E10600;
+    border-radius: 20px;
+    padding: 8px 24px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.filterBtn:hover {
+    background-color: #444;
+}
+
+/* sección del filtro ACTIVO */
+.activeFilter {
+    background-color: #E10600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(225, 6, 0, 0.4);
+}
+
+/* sección del grid de conceptos */
+.glossaryGrid {
+    display: grid;
+    /* En celulares: 1 columna. En pantallas de min 300px, crea las columnas que quepan. */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+}
+
+/* SECCIÓN DEL MÓVIL */
+
+/* Forzamos exactamente 3 columnas en pantallas grandes */
+@media (min-width: 992px) {
+    .glossaryGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

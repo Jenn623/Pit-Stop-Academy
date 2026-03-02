@@ -1,0 +1,72 @@
+/* sección del escenario (el que da el efecto 3D) */
+.cardContainer {
+    perspective: 1000px; /* Crea la ilusión de profundidad 3D */
+    cursor: pointer;
+    width: 100%;
+    /* Le damos una altura mínima para que se vean uniformes antes de tener texto */
+    min-height: 180px; 
+}
+
+/* sección del contenedor Giratorio */
+.cardInner {
+    display: grid; /* <--- LA MAGIA PARA QUE NO COLAPSE */
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1); /* Giro suave y dinámico */
+    transform-style: preserve-3d;
+}
+
+/* sección de la clase que React activa al hacer clic */
+.cardInner.isFlipped {
+    transform: rotateY(180deg);
+}
+
+/* sección de las caras frontal y trasera */
+.cardFront, .cardBack {
+    grid-area: 1 / 1; /* Ambas viven en la misma celda de la rejilla */
+    backface-visibility: hidden; /* Oculta la cara que está de espaldas */
+    -webkit-backface-visibility: hidden; /* Soporte para Safari */
+    
+    /* Estilos base para ambas caras */
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* sección del diseño de la cara Frontal */
+.cardFront {
+    background-color: #2b2b2b; /* Gris oscuro elegante */
+    border: 3px solid #E10600; /* Borde rojo F1 */
+    color: white;
+}
+
+/* Un pequeño texto de ayuda visual */
+.clickHint {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hacemos que la pista aparezca al pasar el mouse */
+.cardContainer:hover .clickHint {
+    opacity: 1;
+}
+
+/* sección del diseño de la cara Trasera (Definición) */
+.cardBack {
+    background-color: #E10600; /* Podemos invertirlo: que el reverso sea rojo sólido */
+    color: white;
+    border: 3px solid #E10600;
+    transform: rotateY(180deg); /* Esta cara ya nace girada 180 grados */
+}
+
+.cardBack p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
