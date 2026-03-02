@@ -1,16 +1,43 @@
-# Pit Stop Academy
+# 🏎️ Pit Stop Academy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a la parada técnica más divertida del internet! **Pit Stop Academy** es una plataforma interactiva diseñada para transformar a cualquier novato en un verdadero experto de la **Fórmula 1**. 
 
-Currently, two official plugins are available:
+Inspirado en la idea de explicar este complejo deporte "como si tuvieras 5 años", este proyecto utiliza una interfaz dinámica y visual para que nadie se pierda los domingos de carrera.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚦 ¿De qué trata este proyecto?
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+La F1 puede ser confusa con tantas reglas, banderas y estrategias. Este sitio web desglosa todo lo que necesitas saber:
+* **¿Qué es la F1?**: Explicaciones sencillas sobre DRS, paradas en pits y aerodinámica.
+* **Escuderías y Pilotos**: Conoce a los 20 cracks de la parrilla 2026 y a sus equipos con un estilo de cartas RPG.
+* **El Tour Mundial**: Un recorrido por los 24 circuitos de la temporada, con coordenadas reales y datos curiosos.
+* **Glosario de Paddock**: Tu diccionario de bolsillo para entender qué rayos dice el ingeniero por la radio.
+* **Leyendas Eternas**: Un espacio conmemorativo para los héroes que dejaron huella en el asfalto.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Stack Tecnológico
+
+Para que este monoplaza corra a máxima velocidad, utilizamos:
+* **React**: El motor principal para una experiencia de usuario fluida y rápida (SPA).
+* **Bootstrap**: Para un diseño responsivo que se ve increíble en cualquier dispositivo.
+* **CSS Modular**: Estilos personalizados para darle ese toque de "fibra de carbono" y neones a la interfaz.
+
+---
+
+## 🎨 Diseño y Vibe
+
+El diseño está inspirado en los colores característicos del automovilismo: **Rojo Ferrari, Amarillo Renault, Negro y Blanco**. Queríamos algo que llamara la atención desde el primer segundo sin sobrecargar la vista, manteniendo un flujo de interacción intuitivo y divertido.
+
+---
+
+## 🏁 ¡Empezar el recorrido!
+
+Si quieres aprender por qué los neumáticos tienen colores o qué significa una bandera amarilla sin morir de aburrimiento, ¡estás en el lugar correcto!
+
+> "Pit Stop Academy: Como una parada técnica para aprender antes de seguir la carrera."
+
+---
+
+Desarrollado con 🏎️ y mucho código.
