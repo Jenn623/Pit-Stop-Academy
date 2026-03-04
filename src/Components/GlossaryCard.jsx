@@ -14,7 +14,7 @@ function GlossaryCard ({data}){
     return(
         <>
             {/* contenedor que contiene el evento de "girar" el componente card*/}
-            <div className='cardContainer' onClick={handleFlip}>
+            <div className='cardContainerr' onClick={handleFlip}>
                 {/* este es el div que realmente gira, como si fuera una moneda */}
                 {/* todas las clases van dentro de los "{ }", que representan a las clases, si estuviera dentro " '' ", se intrepreta como strings y no realiza ninguna función */}
                 {/* el uso de {} indica uso de codigo en JS, las comillas ` ` permiten el uso de las clases */}

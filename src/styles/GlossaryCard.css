@@ -1,5 +1,5 @@
 /* sección del escenario (el que da el efecto 3D) */
-.cardContainer {
+.cardContainerr {
     perspective: 1000px; /* Crea la ilusión de profundidad 3D */
     cursor: pointer;
     width: 100%;
@@ -69,4 +69,5 @@
 .cardBack p {
     font-size: 0.95rem;
     line-height: 1.5;
+    font-family: 'Titillium Web SemiBold';
 }

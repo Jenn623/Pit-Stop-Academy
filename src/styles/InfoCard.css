@@ -1,13 +1,15 @@
 /*seccion para el contenedor de las tarjetas*/
 .card-border{
-    border: 10px solid #F2C146;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde gris sutil */
     border-radius: 15px;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    /*aplicamos una transición que actúe como "amortiguador" para el efecto de "flotar" en los componentes cards*/
-    /*propiedad | tiempo | tiempo de la animacion | delay de la función*/
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: center;
     cursor: pointer;
+    transition: all 0.4s ease; /* Suavidad en la transición */
+    position: relative;
+    overflow: hidden;
+    height: 100%;
 }
 
 /*seccion de animacion al hacer hover sobre las Cards*/
@@ -16,6 +18,7 @@
     transform: translateY(-10px);
     /* efecto de sombra al hacer hover sobre las Cards */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    border-color: #D4AF37; 
 }
 
 /*seccion para el titulo de las tarjetas*/
