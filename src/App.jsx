@@ -5,6 +5,7 @@ import WhatIsF1 from './Pages/WhatIsF1.jsx'
 import TeamsRacers from './Pages/Teams&Racers.jsx'
 import WorldWideCircuits from './Pages/WorldWideCircuits.jsx'
 import Glossary from './Pages/Glossary.jsx'
+import TheLegends from './Pages/TheLegends.jsx'
 import Layout from './Components/Layout.jsx'
 import './App.css'
 
@@ -30,6 +31,8 @@ function App() {
             <Route path='/WorldWideCircuits' element={<WorldWideCircuits/>}></Route>
             {/* cuando la ruta sea "/Glossary" se renderiza la página Glossary */}
             <Route path='/Glossary' element={<Glossary/>}></Route>
+            {/* cuando la ruta sea "/TheLegends" se renderiza la página TheLegends */}
+            <Route path='/TheLegends' element={<TheLegends/>}></Route>
           </Routes>
         </Layout>
 

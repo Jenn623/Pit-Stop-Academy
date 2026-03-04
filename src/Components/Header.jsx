@@ -33,7 +33,7 @@ function Header (){
                                 <a href="/Glossary" className='nav-link customFont'>Glosario</a>
                             </li>
                             <li className='nav-item mr-2'>
-                                <a href="" className='nav-link customFont'>Las Leyendas</a>
+                                <a href="/TheLegends" className='nav-link customFont'>Las Leyendas</a>
                             </li>
                         </ul>
                     </div>

@@ -1,0 +1,110 @@
+/* 1. Sobrescribir el fondo blanco de Bootstrap desde la raíz */
+.darkLegendModal .modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+/* 2. La "Placa Conmemorativa" (Fondo del Modal) */
+.legendModalBody {
+    background-color: #0d0d0d; /* Negro casi puro, muy elegante */
+    color: #f0f0f0;
+    border: 1px solid #333;
+    border-top: 4px solid #D4AF37; /* Línea dorada en la parte superior */
+    border-radius: 12px;
+    padding: 30px;
+    /* Sombra oscura combinada con un levísimo resplandor dorado */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9), 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+/* El contenedor de la tarjeta */
+.cardContainer {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde gris sutil */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease; /* Suavidad en la transición */
+    position: relative;
+    overflow: hidden;
+}
+
+/* 1. ACTUALIZA EL CONTENEDOR (La caja que guarda la foto) */
+.legendImgContainer {
+    position: relative;
+    
+    /* DEFINIMOS EL TAMAÑO DE LA CAJA */
+    width: 100%;
+    max-width: 300px; /* Ancho máximo agradable para el modal */
+    height: 380px;    /* ALTURA FIJA: Esta es la clave. Ajusta este número según tus fotos */
+    
+    margin: 0 auto;  /* Centrado horizontal si sobra espacio */
+    border-radius: 10px;
+    overflow: hidden; /* Corta cualquier parte de la foto gigante que se salga */
+    
+    /* Mantenemos tus estilos de diseño */
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* 2. ACTUALIZA LA IMAGEN (La foto gigante .avif) */
+.legendModalImg {
+    /* Obligamos a la imagen a ocupar el 100% de la caja contenedor */
+    width: 100%;
+    height: 100%;
+    
+    /* LA PROPIEDAD MÁGICA: object-fit cover 
+       Hace que la imagen llene la caja. Si la foto es muy alta o ancha, 
+       la recorta sutilmente en los bordes pero NUNCA la estira ni la deforma. */
+    object-fit: cover;
+    
+    /* Alinea el recorte a la parte superior (para asegurar que se vea la cara) */
+    object-position: top; 
+    
+    /* Eliminamos el border-radius y box-shadow de aquí, 
+       ya se los pusimos al contenedor padre. */
+}
+
+/* EL EFECTO DE "ENCENDIDO" (HOVER) */
+.cardContainer:hover {
+    /* El borde cambia a dorado */
+    border-color: #D4AF37; 
+    /* El resplandor dorado detrás (Glow) */
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4); 
+    /* Efecto de levitación */
+    transform: translateY(-10px); 
+}
+
+/* La imagen recupera su color original y brillo al hacer hover en la tarjeta */
+.cardContainer:hover .legendImage {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.05); /* Un zoom súper sutil */
+}
+
+/* Textos */
+.legendName {
+    color: white;
+    margin-top: 15px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-family: 'F1Font';
+}
+
+/* El nombre también se vuelve dorado al hacer hover */
+.cardContainer:hover .legendName {
+    color: #D4AF37;
+}
+
+.legendYears {
+    color: #888;
+    font-size: 0.9rem;
+    font: 'Titillium Web SemiBold';
+}
+
+.legendModalName{
+    font-family: 'F1Font';
+}
+
+.legendModalYears, .legendQuote{
+    font-family: 'Titillium Web SemiBold';
+}
