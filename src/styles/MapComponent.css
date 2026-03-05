@@ -11,7 +11,7 @@
     width: 100%;
 
     border-radius: 15px;
-    border: 4px solid #E10600;
+    border: 4px solid #000000;
 
     /*ponemos un z-index de 1 para que no se sobreponga al resto de los componentes*/
     z-index: 1;

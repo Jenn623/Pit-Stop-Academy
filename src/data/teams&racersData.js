@@ -10,8 +10,8 @@ const teamsData = [
     history: "Entran con todo en 2026 de la mano de *Andretti*. Es el regreso de un gigante americano para pelearle a los europeos en su propio juego",
     teamTMI: "Es la apuesta más grande de General Motors para conquistar el mundo de la velocidad",
     drivers: [
-        {racerName:"Sergio 'Checo' Perez", nickname:"El Ministro de Defensa", driverPic: "/images/Cadillac/checo.png", skill:"Cuidar las llantas como nadie y defender su posición como un muro", TMI:"Es el piloto mexicano más exitoso y todo un héroe nacional de su país", stats:{edad: "36 años", nacionalidad: "Mexicano", campeonatos: "0"},},
-        {racerName: "Valtteri Bottas", nickname: "Bottas 2.0", driverPic: "/images/Cadillac/bottas.png", skill: "Trabajo en equipo y velocidad en curvas rápidas", TMI: "Le encanta el ciclismo y tiene una obsesión divertida con tomarse fotos en lagos de Finlandia", stats: {edad: "36 años", nacionalidad: "Finlandia", campeonatos: "0"},},
+        {racerName:"Sergio 'Checo' Perez", nickname:"El Ministro de Defensa", driverPic: "/images/Cadillac/checo.avif", skill:"Cuidar las llantas como nadie y defender su posición como un muro", TMI:"Es el piloto mexicano más exitoso y todo un héroe nacional de su país", stats:{edad: "36 años", nacionalidad: "Mexicano", campeonatos: "0"},},
+        {racerName: "Valtteri Bottas", nickname: "Bottas 2.0", driverPic: "/images/Cadillac/bottas.avif", skill: "Trabajo en equipo y velocidad en curvas rápidas", TMI: "Le encanta el ciclismo y tiene una obsesión divertida con tomarse fotos en lagos de Finlandia", stats: {edad: "36 años", nacionalidad: "Finlandia", campeonatos: "0"},},
     ],
     },
     {
@@ -37,7 +37,7 @@ const teamsData = [
     teamTMI: "Tienen el récord del Pit Stop más rápido de la historia (¡1.82 segundos!)",
     drivers: [
         {racerName:"Max Verstappen", nickname:"Mad Max", driverPic: "/images/Red Bull/verstappen.png", skill:"Agresividad y control bajo la lluvia", TMI:"¡Vive para las carreras! Cuando no está en un F1 real, está en su simulador en casa compitiendo online", stats:{edad: "28 años", nacionalidad: "Países Bajos", campeonatos: "3"},},
-        {racerName:"Isack Hadjar", nickname: "El pequeño gran prospecto", driverPic: "/images/Red Bull/hadjar.png", skill: "Valentía en los rebases", TMI: "Es el protegido de Red Bull y dicen que tiene el mismo temperamento fuerte que Max.", stats:{edad: "21 años", nacionalidad: "Francia", campeonatos: "0"},},
+        {racerName:"Isack Hadjar", nickname: "El pequeño gran prospecto", driverPic: "/images/Red Bull/hadjar.avif", skill: "Valentía en los rebases", TMI: "Es el protegido de Red Bull y dicen que tiene el mismo temperamento fuerte que Max.", stats:{edad: "21 años", nacionalidad: "Francia", campeonatos: "0"},},
     ],
     },
     {
@@ -140,8 +140,8 @@ const teamsData = [
     history: "Es el equipo 'hermano menor' de Red Bull. Su misión es probar a los jóvenes talentos antes de pasarlos al equipo grande",
     teamTMI: "Tienen base en Italia y son famosos por tener el mejor catering (comida) del Paddock",
     drivers: [
-        {racerName:"Liam Lawson", nickname:"Kiwi", driverPic: "/images/Racing Bull/lawson.png", skill:"Aprovechar las oportunidades. Siempre que lo llaman de emergencia, cumple", TMI:"Viene de Nueva Zelanda y tuvo que mudarse solo a Europa desde muy niño para cumplir su sueño", stats:{edad: "24 años", nacionalidad: "Nueva Zelanda", campeonatos: "0"},},
-        {racerName:"Arvid Lindblad", nickname: "El Rayo Sueco-Británico", driverPic: "/images/Ferrari/lecrerc.png", skill: "Velocidad pura en curvas rápidas", TMI: "Es la joya más joven de la academia de Red Bull para 2026", stats:{edad: "18 años", nacionalidad: "Reino Unido", campeonatos: "0"},},
+        {racerName:"Liam Lawson", nickname:"Kiwi", driverPic: "/images/Racing Bulls/lawson.png", skill:"Aprovechar las oportunidades. Siempre que lo llaman de emergencia, cumple", TMI:"Viene de Nueva Zelanda y tuvo que mudarse solo a Europa desde muy niño para cumplir su sueño", stats:{edad: "24 años", nacionalidad: "Nueva Zelanda", campeonatos: "0"},},
+        {racerName:"Arvid Lindblad", nickname: "El Rayo Sueco-Británico", driverPic: "/images/Racing Bulls/lindblad.avif", skill: "Velocidad pura en curvas rápidas", TMI: "Es la joya más joven de la academia de Red Bull para 2026", stats:{edad: "18 años", nacionalidad: "Reino Unido", campeonatos: "0"},},
     ],
     },
 
