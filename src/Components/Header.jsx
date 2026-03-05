@@ -11,7 +11,7 @@ function Header (){
                 {/*debe contener dentro una propiedad container-fluid para que no pegue con los bordes*/}
                 <div className='container-fluid justify-content-evenly'> {/* en este caso, el space evenly distribuye todos los elementos de manera equitativa */}
                     <div className='navbar-brand f1-logo '>
-                        <img src="../src/assets/images/f1-logo.svg" alt="Logo F1" />
+                        <img src="/f1-logo.svg" alt="Logo F1" />
                     </div>
                     {/*navbar-nav es el contenedorn de los enlaces*/}
                     <div className='navbar-nav '>
