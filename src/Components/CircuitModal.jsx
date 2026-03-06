@@ -48,8 +48,8 @@ function CircuitModal({show, handleClose, circuitData}) {
                             </div>
 
                             {/* seccion para el boton de cerrar modal */}
-                            <div>
-                                <Button onClick={handleClose}> Cerrar </Button>
+                            <div className='text-end mt-4 pt-3 border-top border-secondary'>
+                                <Button className='f1TicketBtn' onClick={handleClose}> Cerrar </Button>
                             </div>
                         </div>
                     </div>

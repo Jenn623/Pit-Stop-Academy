@@ -14,7 +14,7 @@
 .cardScene{
     perspective: 1000px; /*esto le da el efecto 3D al girar, hace que no se vea plana*/
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde gris sutil */
+    /*border: 2px solid rgba(255, 255, 255, 0.2); /* Borde gris sutil */
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -29,7 +29,7 @@
     /* mueve el componente 10px hacia Arriba */
     transform: translateY(-10px);
     /* efecto de sombra al hacer hover sobre las Cards */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);*/
     border-color: #000000; 
 }
 
@@ -50,8 +50,8 @@
 }
 
 /*sección de la cara frontal de la tarjeta*/
-.cardFrontt, 
-.cardBackk{
+.cardFront, 
+.cardBack{
     /*position: absolute; /*para que el contenido se "oculte justo destras del otro contenedor" */
     grid-area: 1/1;
     width: 100%;

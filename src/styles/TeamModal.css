@@ -13,6 +13,35 @@
     color: whitesmoke;
 }
 
+/* sección del estilo para todas las pestañas */
+.teamGradient .nav-link {
+    /* Cambia aquí la tipografía a la de F1 o la que estés usando */
+    font-family: 'F1Font', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none !important; /* Quitamos los bordes por defecto de Bootstrap */
+}
+
+/* sección para las pestañas INACTIVAS */
+.teamGradient .nav-link:not(.active) {
+    color: rgba(255, 255, 255, 0.6) !important; /* Un blanco semitransparente se ve muy pro */
+    background-color: transparent !important;
+}
+
+/* sección para el hover en una pestaña inactiva */
+.teamGradient .nav-link:not(.active):hover {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* sección para la pestaña ACTIVA */
+.teamGradient .nav-link.active {
+    color: #ffffff !important;
+    background-color: var(--team-color) !important; /* Usamos tu variable de color de equipo */
+    border-bottom: 3px solid white !important; /* Un detalle visual para resaltar la activa */
+}
+
 /*sección para los estilos del contenedor de la imagen del piloto*/
 .driverContainer{
     width: 100%;
@@ -44,4 +73,28 @@
     color: white; /* Letra blanca para contrastar */
     border: none; /* Quitamos bordes para que se vea limpio */
     overflow: hidden; /* Mantiene las esquinas redondeadas a raya */
+}
+
+/* sección para el chasis del boton*/
+.f1TeamBtn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--team-color); /* Usa el color dinámico del equipo */
+    border-radius: 30px; /* Diseño de "píldora", muy aerodinámico */
+    padding: 8px 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'F1-Regular', sans-serif; /* Usa tu tipografía */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* sección del efecto del hover */
+.f1TeamBtn:hover {
+    background-color: var(--team-color);
+    color: white;
+    /* Un resplandor con el color del equipo */
+    box-shadow: 0 0 15px var(--team-color); 
+    transform: scale(1.05); /* Pequeño zoom que da sensación de interactividad */
 }

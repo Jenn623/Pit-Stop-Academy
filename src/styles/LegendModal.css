@@ -108,3 +108,25 @@
 .legendModalYears, .legendQuote{
     font-family: 'Titillium Web SemiBold';
 }
+
+/* sección del chasis del boton */
+.f1LegendBtn {
+    background-color: transparent; /* Fondo invisible inicial */
+    color: #D4AF37; /* Texto dorado */
+    border: 2px solid #D4AF37; /* Borde dorado */
+    border-radius: 8px; /* Un redondeo elegante y sobrio */
+    padding: 8px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.4s ease; /* Transición un poco más lenta para verse más "premium" */
+    cursor: pointer;
+}
+
+/* sección del efecto del hover */
+.f1LegendBtn:hover {
+    background-color: #D4AF37; /* Se llena de dorado */
+    color: #0d0d0d; /* Letra casi negra para que se lea perfecto sobre el oro */
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); /* Un resplandor sutil */
+    transform: translateY(-2px);
+}

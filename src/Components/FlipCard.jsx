@@ -23,12 +23,12 @@ function FlipCard({title, frontDescription, backDescription}){
                 {/* básicamente decide si se hace rotar a la tarjeta o se deja un espacio en blanco */}
 
                     {/* cara del frente */}
-                    <div className='cardFrontt'>
+                    <div className='cardFront'>
                         <h5 className='titleCard'> {title} </h5>
                         <p className='descriptionCard'> {frontDescription} </p>
                     </div>
                     {/* cara trasera */}
-                    <div className='cardBackk'>
+                    <div className='cardBack'>
                         <h5 className='titleCard'> {title} </h5>
                         <p className='descriptionCard'> {backDescription} </p>
                     </div>

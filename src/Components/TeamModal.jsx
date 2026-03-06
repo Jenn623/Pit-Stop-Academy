@@ -82,7 +82,7 @@ function TeamModal({show, handleClose, teamsData}){
                     {/* El botón de cerrar ahora vive protegido dentro del Body */}
                     {/* Un poco de padding y borde sutil para separarlo del contenido */}
                     <div className='text-end p-2 border-top border-secondary'>
-                        <Button variant="light" onClick={handleClose}>Cerrar</Button>
+                        <Button className='f1TeamBtn' onClick={handleClose}>Cerrar</Button>
                     </div>
 
                 </Modal.Body>

@@ -1,7 +1,16 @@
 import '../styles/HeroSection.css'
 import {Container, Row, Col} from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 
 function HeroSection() {
+
+    // se inicializa la funcion de navigate para redirigir con el boton empezar
+    const navigate = useNavigate();
+
+    // función para redirigir a la siguiente página
+    const handleStartEngine = () => {
+        navigate('/WhatIsF1');
+    };
 
 
     return(
@@ -20,7 +29,8 @@ function HeroSection() {
                         ¡Tranqui! Que acá te explico la Fórmula 1 sin palabras raras ni tecnicismos aburridos. 
                         Prepárate para entender por qué todo el mundo esta obsesionado con este deporte (y con Sergio Pérez)
                     </p>
-                    <button type='button' className='rounded-pill heroBtn justify-content-center'>
+                    <button type='button' className='rounded-pill heroBtn justify-content-center'
+                    onClick={handleStartEngine}>
                         Empezar
                     </button>
                     </Col>

@@ -57,6 +57,29 @@
     filter: invert(1);
 }
 
+/* sección del chasis del boton */
+.f1TicketBtn {
+    background-color: #E10600; 
+    color: white;
+    border: 2px solid #E10600;
+    border-radius: 6px; /* Bordes ligeramente cuadrados para que parezca un sello de ticket */
+    padding: 8px 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Letras un poco más separadas, estilo folio */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(225, 6, 0, 0.3); /* Sombra base roja */
+}
+
+/* sección del hover al pasar el mouse */
+.f1TicketBtn:hover {
+    background-color: transparent;
+    color: #E10600;
+    box-shadow: 0 0 20px rgba(225, 6, 0, 0.6); /* Resplandor neón rojo */
+    transform: translateY(-2px); /* Se levanta un poquito */
+}
+
 /* SECCIÓN DEL MÓVIL */
 
 /* Si en móvil se apilan, cambiamos la línea punteada para que sea horizontal */

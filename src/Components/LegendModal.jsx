@@ -43,7 +43,7 @@ function LegendModal ({ show, handleClose, legend }) {
 
                             {/* boton para cerrar el modal */}
                             <div className='text-end mt-4'>
-                                <Button onClick={handleClose} className='goldBtn'>
+                                <Button onClick={handleClose} className='f1LegendBtn'>
                                     Cerrar Tributo
                                 </Button>
                             </div>
