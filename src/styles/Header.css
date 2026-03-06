@@ -1,16 +1,21 @@
-.customFont{
+/* sección para las tipografías */
+.customFont {
     font-family: 'F1Font' !important;
-    color: white;
+    color: white !important;
     font-size: 1.2rem;
-}
-
-.customFont:hover{
-    color: whitesmoke;
-    border-bottom: 3px solid whitesmoke;
+    /* borde transparente que se va a marcar */
+    border-bottom: 3px solid transparent; 
     transition: all 0.3s linear;
 }
 
-.f1-navbar{
+/* sección del hover que activa la línea */
+.customFont:hover,
+.nav-link.customFont.active {
+    color: whitesmoke !important;
+    border-bottom: 3px solid whitesmoke;
+}
+
+.f1-navbar {
     width: 70%;
     margin: 0 auto;
 }

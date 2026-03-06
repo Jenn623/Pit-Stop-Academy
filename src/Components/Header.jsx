@@ -1,46 +1,47 @@
-import {Link} from 'react-router-dom'
-import '../styles/Header.css'
+// 1. Importamos NavLink en lugar de Link
+import { NavLink } from 'react-router-dom';
+import '../styles/Header.css';
 
-function Header (){
-
-    return(
-
+function Header() {
+    return (
         <>
-            {/*propiedad navbar para conseder los atributos navbar de bootstrap, es el contenedor principal*/}
             <nav className='navbar justify-content-center sticky-top f1-navbar pt-4'>
-                {/*debe contener dentro una propiedad container-fluid para que no pegue con los bordes*/}
-                <div className='container-fluid justify-content-evenly'> {/* en este caso, el space evenly distribuye todos los elementos de manera equitativa */}
-                    <div className='navbar-brand f1-logo '>
-                        <img src="/f1-logo.svg" alt="Logo F1" />
+                <div className='container-fluid justify-content-evenly'> 
+                    
+                    {/* el logo redirige tambien al inicio */}
+                    <div className='navbar-brand f1-logo'>
+                        <NavLink to="/">
+                            <img src="/f1-logo.svg" alt="Logo F1" />
+                        </NavLink>
                     </div>
-                    {/*navbar-nav es el contenedorn de los enlaces*/}
-                    <div className='navbar-nav '>
+                    
+                    <div className='navbar-nav'>
                         <ul className='nav'>
+                            {/* etiquetas con sus direcciones respectivas */}
                             <li className='nav-item mr-2'>
-                                {/*nav-link vuielve un enlace y le da la propiedad de bootstrap*/}
-                                <a href="/" className='nav-link customFont'>Inicio</a>
+                                <NavLink to="/" className='nav-link customFont'>Inicio</NavLink>
                             </li>
                             <li className='nav-item mr-2'>
-                                <a href="/WhatIsF1" className='nav-link customFont'>¿Qué es?</a>
+                                <NavLink to="/WhatIsF1" className='nav-link customFont'>¿Qué es?</NavLink>
                             </li>
                             <li className='nav-item mr-2'>
-                                <a href="/Teams&Racers" className='nav-link customFont'>Escuderías y Pilotos</a>
+                                <NavLink to="/Teams&Racers" className='nav-link customFont'>Escuderías y Pilotos</NavLink>
                             </li>
                             <li className='nav-item mr-2'>
-                                <a href="/WorldWideCircuits" className='nav-link customFont'>Circuitos</a>
+                                <NavLink to="/WorldWideCircuits" className='nav-link customFont'>Circuitos</NavLink>
                             </li>
                             <li className='nav-item mr-2'>
-                                <a href="/Glossary" className='nav-link customFont'>Glosario</a>
+                                <NavLink to="/Glossary" className='nav-link customFont'>Glosario</NavLink>
                             </li>
                             <li className='nav-item mr-2'>
-                                <a href="/TheLegends" className='nav-link customFont'>Las Leyendas</a>
+                                <NavLink to="/TheLegends" className='nav-link customFont'>Las Leyendas</NavLink>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </>
-    )
+    );
 }
 
-export default Header
+export default Header;
